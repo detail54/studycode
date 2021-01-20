@@ -1,6 +1,8 @@
 package interfaceee;
 
 interface I1{
+	//int i;			
+	int i = 0;			//인터페이스 내부에는 상수용으로 변수 선언이 가능. 그리고 그변수는 static final로 자동선언된다.	
 	public void x();		//인터페이스는 본체(로직? {} 안에 내용) 이 없는 메소드 만을 가지고 있어야함.
 }
 		//접근 제어자는 반드시 public 이어야 한다.
