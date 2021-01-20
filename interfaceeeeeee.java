@@ -1,26 +1,26 @@
 package interfaceee;
 
 interface I1{
-	public void x();
+	public void x();		//ì¸í„°íŽ˜ì´ìŠ¤ëŠ” ë³¸ì²´(ë¡œì§? {} ì•ˆì— ë‚´ìš©) ì´ ì—†ëŠ” ë©”ì†Œë“œ ë§Œì„ ê°€ì§€ê³  ìžˆì–´ì•¼í•¨.
 }
-		//Á¢±Ù Á¦¾îÀÚ´Â ¹Ýµå½Ã public ÀÌ¾î¾ß ÇÑ´Ù.
+		//ì ‘ê·¼ ì œì–´ìžëŠ” ë°˜ë“œì‹œ public ì´ì–´ì•¼ í•œë‹¤.
 interface I2{
 	public void z();
 }
-		//implements - Å¬·¡½º¿Í ÀÎÅÍÆäÀÌ½º °áÇÕ. (Å¬·¡½º A´Â ÀÎÅÍÆäÀÌ½º I¸¦ ±¸ÇöÇÑ´Ù.)
+		//implements - í´ëž˜ìŠ¤ì™€ ì¸í„°íŽ˜ì´ìŠ¤ ê²°í•©. (í´ëž˜ìŠ¤ AëŠ” ì¸í„°íŽ˜ì´ìŠ¤ Ië¥¼ êµ¬í˜„í•œë‹¤.)
 class A implements I1, I2{
 	public void x() {}
 	public void z() {}
 }
-		//Å¬·¡½º°¡ »óÀ§ Å¬·¡½º¸¦ »ó¼ÓÇÒ¶© ÇÑ°³ÀÇ »óÀ§Å¬·¡½º¸¦ »ó¼Ó ÇÒ¼ö ÀÖÁö¸¸,
-		//ÀÎÅÍÆäÀÌ½º´Â ¿©·¯°³ °áÇÕÇÒ ¼ö ÀÖ´Ù. ´Ü, °áÇÕÇÑ ÀÎÅÍÆäÀÌ½ºÀÇ ¸Þ¼Òµå¸¦ ¹Ýµå½Ã ±¸ÇöÀ» ÇØ¾ßÇÔ.
+		//í´ëž˜ìŠ¤ê°€ ìƒìœ„ í´ëž˜ìŠ¤ë¥¼ ìƒì†í• ë• í•œê°œì˜ ìƒìœ„í´ëž˜ìŠ¤ë¥¼ ìƒì† í• ìˆ˜ ìžˆì§€ë§Œ,
+		//ì¸í„°íŽ˜ì´ìŠ¤ëŠ” ì—¬ëŸ¬ê°œ ê²°í•©í•  ìˆ˜ ìžˆë‹¤. ë‹¨, ê²°í•©í•œ ì¸í„°íŽ˜ì´ìŠ¤ì˜ ë©”ì†Œë“œë¥¼ ë°˜ë“œì‹œ êµ¬í˜„ì„ í•´ì•¼í•¨.
 
 interface I3{
 	public void a();
 }
 
-interface I4 extends I3{		//ÀÎÅÍÆäÀÌ½ºµµ »ó¼Ó°¡´É. »ó¼ÓÀº ÀÎÅÍÆäÀÌ½ºµµ ÇÑ°³ÀÇ ÀÎÅÍÆäÀÌ½º¸¸ »ó¼Ó°¡´É.
-	public void b();			//´Ü, »ó¼Ó¹ÞÀº ÇÏÀ§ ÀÎÅÍÆäÀÌ½º¸¦ Å¬·¡½º¿¡ °áÇÕ ½ÃÅ°¸é »óÀ§ ÀÎÅÍÆäÀÌ½º¿Í ÇÏÀ§ ÀÎÅÍÆäÀÌ½ºÀÇ ¸Þ¼Òµå¸¦ ¸ðµÎ ±¸ÇöÇØ¾ßÇÔ.
+interface I4 extends I3{		//ì¸í„°íŽ˜ì´ìŠ¤ë„ ìƒì†ê°€ëŠ¥. ìƒì†ì€ ì¸í„°íŽ˜ì´ìŠ¤ë„ í•œê°œì˜ ì¸í„°íŽ˜ì´ìŠ¤ë§Œ ìƒì†ê°€ëŠ¥.
+	public void b();			//ë‹¨, ìƒì†ë°›ì€ í•˜ìœ„ ì¸í„°íŽ˜ì´ìŠ¤ë¥¼ í´ëž˜ìŠ¤ì— ê²°í•© ì‹œí‚¤ë©´ ìƒìœ„ ì¸í„°íŽ˜ì´ìŠ¤ì™€ í•˜ìœ„ ì¸í„°íŽ˜ì´ìŠ¤ì˜ ë©”ì†Œë“œë¥¼ ëª¨ë‘ êµ¬í˜„í•´ì•¼í•¨.
 }
 
 class B implements I4{
