@@ -2,19 +2,19 @@ package testa;
 
 class AAA{
 	void ride() {
-		System.out.println("¿À¹ö¶óÀÌµùAAA");
+		System.out.println("ì˜¤ë²„ë¼ì´ë”©AAA");
 	}
 	void load() {
-		System.out.println("¿À¹ö·ÎµùAAA");
+		System.out.println("ì˜¤ë²„ë¡œë”©AAA");
 	}
 }
 
 class BBB extends AAA{
-	void ride() {			//¸Ş¼Òµå ¸íÀ» µ¿ÀÏÇÏ°Ô ÇÏ°í, ³»¿ëÀ» ÀçÁ¤ÀÇ.
-		System.out.println("¿À¹ö¶óÀÌµùBBB");
+	void ride() {			//ë©”ì†Œë“œ ëª…ì„ ë™ì¼í•˜ê²Œ í•˜ê³ , ë‚´ìš©ì„ ì¬ì •ì˜. ì˜¤ë²„ë¼ì´ë”©ì€ ìƒì†ê°œë…ì´ ë‚˜ì˜¨ë‹¤.
+		System.out.println("ì˜¤ë²„ë¼ì´ë”©BBB");
 	}
-	void load() {
-		System.out.println("¿À¹ö·ÎµùBBB");
+	void load(int a) {		//ì˜¤ë²„ë¡œë”©. íŒŒë¼ë¯¸í„° ë³€ê²½. 
+		System.out.println("ì˜¤ë²„ë¡œë”©BBB");
 	}
 }
 
